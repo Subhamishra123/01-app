@@ -10,6 +10,8 @@ public class Application {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext run = SpringApplication.run(Application.class, args);
+		int i=10;
+		int j=20;
 		UserService bean = run.getBean(UserService.class);
 		bean.printUserName();
 	}
